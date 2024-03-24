@@ -52,8 +52,12 @@ public class Demo
 
 ```java
 class Adder{  
-static int add(int a,int b){return a+b;}  
-static int add(int a,int b,int c){return a+b+c;}  
+static int add(int a,int b){
+    return a+b;
+    }  
+static int add(int a,int b,int c){
+    return a+b+c;
+    }  
 }  
 class TestOverloading1{  
 public static void main(String[] args){  
@@ -67,8 +71,12 @@ System.out.println(Adder.add(11,11,11));
 ```java
 
 class Adder{  
-static int add(int a, int b){return a+b;}  
-static double add(double a, double b){return a+b;}  
+static int add(int a, int b){
+    return a+b;
+    }  
+static double add(double a, double b){
+    return a+b;
+}  
 }  
 class TestOverloading2{  
 public static void main(String[] args){  
@@ -84,8 +92,10 @@ System.out.println(Adder.add(12.3,12.6));
 
 ```java
 class Adder{  
-static int add(int a,int b){return a+b;}  
-static double add(int a,int b){return a+b;}  
+static int add(int a,int b){
+    return a+b;}  
+static double add(int a,int b){
+    return a+b;}  
 }  
 class TestOverloading3{  
 public static void main(String[] args){  
@@ -107,8 +117,10 @@ System.out.println(Adder.add(11,11));//ambiguity
 
 ```java
 class TestOverloading4{  
-public static void main(String[] args){System.out.println("main with String[]");}  
-public static void main(String args){System.out.println("main with String");}  
+public static void main(String[] args){
+    System.out.println("main with String[]");}  
+public static void main(String args){
+    System.out.println("main with String");}  
 public static void main(){System.out.println("main without args");}  
 }  
 
@@ -135,8 +147,10 @@ public static void main(){System.out.println("main without args");}
 
 ```java
 class OverloadingCalculation1{  
-  void sum(int a,long b){System.out.println(a+b);}  
-  void sum(int a,int b,int c){System.out.println(a+b+c);}  
+  void sum(int a,long b){
+    System.out.println(a+b);}  
+  void sum(int a,int b,int c){
+    System.out.println(a+b+c);}  
   
   public static void main(String args[]){  
   OverloadingCalculation1 obj=new OverloadingCalculation1();  
@@ -158,8 +172,10 @@ class OverloadingCalculation1{
 
 ```java
 class OverloadingCalculation2{  
-  void sum(int a,int b){System.out.println("int arg method invoked");}  
-  void sum(long a,long b){System.out.println("long arg method invoked");}  
+  void sum(int a,int b){
+    System.out.println("int arg method invoked");}  
+  void sum(long a,long b){
+    System.out.println("long arg method invoked");}  
   
   public static void main(String args[]){  
   OverloadingCalculation2 obj=new OverloadingCalculation2();  
@@ -174,8 +190,10 @@ class OverloadingCalculation2{
 
 ```java
 class OverloadingCalculation3{  
-  void sum(int a,long b){System.out.println("a method invoked");}  
-  void sum(long a,int b){System.out.println("b method invoked");}  
+  void sum(int a,long b){
+    System.out.println("a method invoked");}  
+  void sum(long a,int b){
+    System.out.println("b method invoked");}  
   
   public static void main(String args[]){  
   OverloadingCalculation3 obj=new OverloadingCalculation3();  
