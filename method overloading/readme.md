@@ -115,3 +115,72 @@ public static void main(){System.out.println("main without args");}
 //main with String[]
 ```
 
+## Method Overloading and Type Promotion
+
+### One type is promoted to another implicitly if no matching datatype is found. Let's understand the concept by the figure given below:
+
+
+
+
+###                     byte
+###                      ||
+###                     short
+###                      ||
+###             char => int => float
+###                      || \ /  ||
+###                      || / \   ||     
+###                     long=> double
+
+### Example of Method Overloading with TypePromotion
+
+```java
+class OverloadingCalculation1{  
+  void sum(int a,long b){System.out.println(a+b);}  
+  void sum(int a,int b,int c){System.out.println(a+b+c);}  
+  
+  public static void main(String args[]){  
+  OverloadingCalculation1 obj=new OverloadingCalculation1();  
+  obj.sum(20,20);//now second int literal will be promoted to long  
+  obj.sum(20,20,20);  
+
+  //40
+  //60
+  
+  }  
+}  
+```
+
+
+
+### Example of Method Overloading with Type Promotion if matching found
+
+
+
+```java
+class OverloadingCalculation2{  
+  void sum(int a,int b){System.out.println("int arg method invoked");}  
+  void sum(long a,long b){System.out.println("long arg method invoked");}  
+  
+  public static void main(String args[]){  
+  OverloadingCalculation2 obj=new OverloadingCalculation2();  
+  obj.sum(20,20);//now int arg sum() method gets invoked  
+  }  
+}  
+```
+
+
+### Example of Method Overloading with Type Promotion in case of ambiguity
+
+
+```java
+class OverloadingCalculation3{  
+  void sum(int a,long b){System.out.println("a method invoked");}  
+  void sum(long a,int b){System.out.println("b method invoked");}  
+  
+  public static void main(String args[]){  
+  OverloadingCalculation3 obj=new OverloadingCalculation3();  
+  obj.sum(20,20);//now ambiguity  
+  }  
+}  
+
+```
