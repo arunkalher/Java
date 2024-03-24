@@ -1,8 +1,9 @@
 
 ## [Class and Objects basic](https://github.com/arunkalher/Java/tree/main/class%20and%20objects)
 
-## [Methods in java](https://github.com/arunkalher/Java/tree/main/class%20and%20objects)
+## [Method Overloading in java](https://github.com/arunkalher/Java/tree/main/method%20overloading)
 
+## [Methods in java](https://github.com/arunkalher/Java/tree/main/class%20and%20objects)
 
 ## Author
 ### Arun Kalher
