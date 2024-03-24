@@ -1,6 +1,8 @@
 ## should be one public class in a .java file
+
 ## should have a class named same as that of script like demo.java should have public class demo
 
+### public static void main should be there in class demo
 ```java
 
 class Calculator{
