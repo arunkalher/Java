@@ -1,7 +1,7 @@
 
 ## [Class and Objects basic](https://github.com/arunkalher/Java/tree/main/class%20and%20objects)
 
-
+## [Methods in java](https://github.com/arunkalher/Java/tree/main/class%20and%20objects)
 
 
 ## Author
