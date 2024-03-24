@@ -62,7 +62,7 @@ System.out.println(Adder.add(11,11,11));
 }}  
 ```
 
-# 2. Method Overloading: changing data type of arguments
+## 2. Method Overloading: changing data type of arguments
 
 ```java
 
